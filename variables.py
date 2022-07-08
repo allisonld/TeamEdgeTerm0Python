@@ -117,3 +117,9 @@ print(remainderquotientDividedBy2)
 
 
 # # -------------------------------------------- 
+randonum = 7
+randonum2 = 13
+
+remainderwhendivided = randonum2 % randonum
+
+print(remainderwhendivided)

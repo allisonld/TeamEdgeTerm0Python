@@ -15,35 +15,57 @@
   # Challenge 1: Let's try to write some basic functions.
 # -------------------------------------------- 
 
-print("------------------- Challenge 1 -------------------")
+# print("------------------- Challenge 1 -------------------")
 
 # **** Challenge 1: Problem 1 ****
 # Write a function called print_message() that prints any message you want.
 
+def print_message(message):
+	return(message)
+print(print_message("hey what's up?"))
 
-# **** Challenge 1: Problem 2 ****
+# print("Challenge 1: Problem 2 ****")
 # Write a function called print_five_messages() that calls print_message() five times.
+
+def print_five_messages(print_message):
+	return(print_message + print_message + print_message + print_message + print_message)
+print(print_five_messages("hey what's up?"))
 
 
 # **** Challenge 1: Problem 3 ****
 # Write a function called get_user_input() that asks the user if they'd like to print your message
 # once or five times. Then call one of the two functions above based on what the user decides.
 
+def get_user_input(print_message, print_five_messages, user_response):
+	if user_response == "1 time":
+		return(print_message)
+	if user_response == "5 times":
+		return(print_five_messages)
+print(get_user_input("hey what's up?", "hey what's up?", "5 times"))
+	
 
 # **** Challenge 1: Problem 4 ****
 # Write a function called print_greeting() that prints a greeting message to the user.
 
+def print_greeting(greeting):
+	return(greeting)
+print(print_greeting("hello"))
+
 
 # **** Challenge 1: Problem 5 ****
 # Write a function called print_closing() that prints a goodbye message to the user.
-
+def print_closing(closing):
+	return(closing)
+print(print_closing("goodbye"))
 
 # **** Challenge 1: Problem 6 ****
 # Write a function called run() that greets the user, asks them for input, and sends a goodbye message.
 # Remember! Use the functions that you've already made. Don't hardcode anything!
 
 
-
+def run(print_greeting, print_closing, INput):
+	return(print(print_greeting, print(type(INput)), print(print_closing))
+print(run("hello", "goodbye", input("gimme some input")))
 # -------------------------------------------- 
 
 # Challenge 2: Functions are also able to take input and return output. 
@@ -51,7 +73,7 @@ print("------------------- Challenge 1 -------------------")
 
 # -------------------------------------------- 
 
-print("------------------- Challenge 2 -------------------")
+# print("------------------- Challenge 2 -------------------")
 
 # **** Challenge 2: Problem 1 ****
 
@@ -66,7 +88,11 @@ print("------------------- Challenge 2 -------------------")
 # -------------------------------------------- 
 
 
-
+def sum_double(a, b):
+	if a == b:
+		return (a + b) * 2
+	return a + b
+print(sum_double (1, 2))
 
 
 
@@ -86,8 +112,15 @@ print("------------------- Challenge 2 -------------------")
 
 # -------------------------------------------- 
 
+def makes_ten(a, b):
+	if a or b == "10":
+		return("true")
+	if int(a + b) == 10:
+		return("true")
+	return("false")
+print(makes_ten(1, 10))
 
-
+ 
 
 
 
@@ -110,6 +143,14 @@ print("------------------- Challenge 2 -------------------")
 		# alarm_clock(0, False) → "10:00"
 
 # -------------------------------------------- 
+def alarmClock(dayOfWeek, Vacation):
+	if dayOfWeek <= 5 and Vacation == "no":
+		return("7:00")
+	if (dayOfWeek >= 5 and Vacation == "no") or (dayOfWeek <= 5 and Vacation == "yes"):
+		return("10:00")
+	if (dayOfWeek >= 5 and Vacation == "yes"):
+		return("off")
+print(alarmClock(4, "no"))
 
 
 
@@ -136,7 +177,13 @@ print("------------------- Challenge 2 -------------------")
 
 # -------------------------------------------- 
 
-
+def speedingTicket(speed):
+	if speed < 60:
+		return(0)
+	elif (speed > 60) and (speed < 80):
+		return(1)
+	return 2
+print(speedingTicket(90 ))
 
 
 
