@@ -30,6 +30,9 @@ print("My Simple Calculator")
 # Write a function called add_numbers that will take two numbers and return the sum.
 
 
+def add_numbers(num1, num2):
+	return(num1 + num2)
+
 
 
 
@@ -37,6 +40,8 @@ print("My Simple Calculator")
 
 # Write a function called sub_numbers that will take two numbers and return the difference.
 
+def sub_numbers(num3, num4):
+	return(num3 - num4)
 
 
 
@@ -68,6 +73,8 @@ print("My Simple Calculator")
 
 # Write a function called multiply_numbers that will take two numbers and return the product.
 
+def multiply_numbers(num5, num6):
+	return(num5 * num6)
 
 
 
@@ -75,7 +82,8 @@ print("My Simple Calculator")
 
 # Write a function called divide_numbers that will take two numbers and return the quotient.
 
-
+def divide_numbers(num7, num8):
+	return(num7 * num8)
 
 
 
@@ -102,8 +110,29 @@ print("My Simple Calculator")
 
 # -------------------------------------------- 
 
+question = input("what do you want to calculate?")
+if question == "multiply":
+	num1 = int(input("what is the first number"))
+	num2 = int(input("what is the second number"))
+	product = multiply_numbers(num1, num2)
+	print(str(product))
+if question == "divide":
+	num3 = int(input("what is the first number"))
+	num4 = int(input("what is the second number"))
+	quotient = divide_numbers(num3, num4)
+	print(str(quotient))
+if question == "subtract":
+	num5 = int(input("what is the first number"))
+	num6 = int(input("what is the second number"))
+	difference = sub_numbers(num5, num6)
+	print(str(difference))
+if question == "add":
+	num7 = int(input("what is the first number"))
+	num8 = int(input("what is the second number"))
+	sum = add_numbers(num7, num8)
+	print(str(sum))
 
-
+# user_number = type a #
 
 
 
