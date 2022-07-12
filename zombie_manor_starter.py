@@ -125,15 +125,15 @@ def check_answer(input):
       print(" I don't understand that")
 
 def start():
-  global current_room
+  global current_location
 
-  print("Welcome to Zombie Manor!!")
-  name = input("What is your name, player? ")
+  print("We're sorry for your loss, soldier. ")
+  name = input("What is your name--what do they call you, soldier? ")
   player.name = name
-  print("Welcome, " + name)
+  print("Beware, " + name)
 
-  #begin at the kitchen
-  current_room = kitchen
+  #begin in the middle of the forest
+  current_location = middle_of_forest
 
   print(f"You are in a: {current_room.name}. and everything looks normal. The air smells like death")
 

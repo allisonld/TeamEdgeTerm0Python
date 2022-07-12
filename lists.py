@@ -28,7 +28,7 @@ names = ["Julian", "Wolf", "Alex", "Steph", "Alessandro"]
 print("names: " + str(names))  
 
 #-->TODO: Declare another list called friends with at least 5 strings inside (if you don't have 5 friends make them up!)
-
+friends = ["sophia gilbert" , "emma martinez" , "kate hoban" , "amarachi ezekwe" , "jordan lim" , "sana arya"]
 
 #this list holds numbers
 numbers = [12.9, 23.4 , 100, 3.1415 , 500, 1.20]
@@ -36,7 +36,7 @@ print("numbers: " + str(numbers))
 
 #-->TODO: Declare another list and add in at least 5 numbers. Why five? I don't know. It just feels right.
 
-
+another_list = [1 , 2, 3, 5, 76]
 
 #this list has mixed data types. It's allowed in Python!
 random_stuff = ["Aardvark", True, False, 1.23, "Grandpa"]
@@ -44,9 +44,12 @@ print("random: " + str(random_stuff))
 
 #-->TODO: Declare and log a list filled with the first 5 things that come into your head, booleans, Strings, numbers are all cool,
 
+first_5_things = [29, "popcorn" , "smalls" , 32 , "ariana grande"]
 
 #-->TODO: Declare and log two more lists with whatever you want. 
 
+declare_list = ["whatever" , "i" , "want"]
+log_list = ["bla" , 56 , 943 , 3.1415926535]
 
 print("------------------- CHALLENGE 2 -------------------")
  
@@ -55,9 +58,9 @@ print("The first name is " + names[0])
 
 #-->TODO: Print the name of your best friend from your friends list
 
-
+print("the friend I saw most recently was " + friends[1])
 #-->TODO: Print the first AND last elements of any list you made, or make a brand new one.
-
+print('the first element of the list called "first_5_things" is ' + first_5_things[1] + 'and the last element is ' +first_5_things)
 
 print("------------------- CHALLENGE 3 -------------------")
 #this code changes the value of the second element of the names list, then we print the list:
@@ -90,7 +93,8 @@ parent_list = [child_list_1, child_list_2]
 print("This list has babies: " + str(parent_list))
 
 #-->TODO: Store and print all the lists we have worked on thus far in a new parent list
-
+parent_list = [declare_list , log_list , friends]
+print(parent_list)
 
 print("------------------- CHALLENGE 5 -------------------")
 
@@ -102,9 +106,9 @@ movies.append("Black Panther")
 print("Movies now has: " + str(movies))
 
 #-->TODO: Declare a list with 5 favorite songs
-
+five_fave_songs = ["the Last Great American Dynasty" , "Lost Boy" , "Firebird" , "illicit affairs"]
 #-->TODO: Add 2-3 more songs using .append() and print both before and after.
-
+five_fave_songs.append ("invisible string" , "fearless")
 #We can also remove elements using .pop(), which removes the last element or the element at the given index. You can store it after it comes out:
 cities = ["New York", "Oakland", "Las Vegas", "Topeka"]
 print("cities: " + str(cities))
@@ -112,7 +116,7 @@ unwanted_city = cities.pop()
 print("unwanted city: " + str(unwanted_city))
 
 #-->TODO: remove your last song using .pop() and print the removed element as above
-
+five_fave_songs.pop()
 #Note: there are more methods to remove and modify list elements. We will cover those later
 
 print("------------------- CHALLENGE 6 -------------------")
