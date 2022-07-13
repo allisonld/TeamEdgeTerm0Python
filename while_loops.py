@@ -14,43 +14,48 @@
  #   5. WHAT AM I: Write a game loop that prompts that never stops
  #      asking, "Iknow you are a _____, but what am I?"
  # 
+ import random
  # ***************************************************************/
 
 print("------------------- CHALLENGE 1 : IN YOUR PRIME -------------------")
 
 #Here is a humble while loop in action. We need a variable to hold the counter value.
-num = 0
-while num <= 10:
-    print("example counter--> " + str(num))
-    num += 1
+# num = 0
+# while num <= 10:
+#     print("example counter--> " + str(num))
+#     num += 1
 
 
 #------------ Helper function, do not mess with this part below ---------------??
 
-def test_prime(n):
-  if n==1:
-    return False
+# # def pattern():
 
-  elif n == 2:
-    return True
-
-  else:
-    for x in range(2, n-1):
-      if n % x == 0:
-        return False
-    return True
+#     index = 0 
+#     my_list =[]
+    
+#     while index <= 5:
+#         my_list.append(index)
+#         print(my_list)
+#         index += 1
 
 #-->TODO: Declare a while loop that prints all the prime numbers between 0 and 100, use test_prime() helper function
-
+# count = 0
+# while count <100:
+#   if test_prime(count) == true:
+#     print(prime_count)
 
 
 print("------------------- CHALLENGE 2 : FOUND   -------------------")
 
-#here is a list full of items
-items = ["pencil" , "eraser" , "mirror" , "comb" , "spoon" , "key" , "earrings" ,"cat food" , "magazine"]
+# def pattern():
 
-#-->TODO: Use a while loop to search the contents of a list for the key! If it exists, print "found the key!"
-
+#     index = 0 
+#     my_list =[]
+    
+#     while index <= 5:
+#         my_list.append(index)
+#         print(my_list)
+#         index += 1
 
 
 print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
@@ -60,12 +65,13 @@ print("------------------- CHALLENGE 3 : BUGGIN   -------------------")
 
 #-->TODO: Make me count  2, 4, 6,..., 50
 
-def even_numbers_to_fifty():
-    num = 50
-    while num < 50:
-        print("number: " + str(num))
+# def even_numbers_to_fifty():
+#     num = 50
+#     while num < 50:
+#       if num % 2 == 0:
+#         print("number: " + str(num))
 
-even_numbers_to_fifty()
+# even_numbers_to_fifty()
 
 #-->TODO: Make this design  below
 #
@@ -95,7 +101,16 @@ def pattern():
 
 pattern()
 
+def pattern2():
 
+    index = [0 , 1 , 2 , 3 , 4 , 5]
+    my_list =[]
+    
+    while index <= 5 and >= 0:
+        my_list.pop(index)
+        print(my_list)
+        index -= 1
+pattern2()
 print("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
 
 
@@ -105,6 +120,8 @@ print("------------------- CHALLENGE 4 : MATH QUIZ   -------------------")
 #         Use this handy boolean to get you started! You will need input()!
 
 is_correct = False
+
+random_number = random.randint(0, 100)
 
 
 print("------------------- CHALLENGE 5 : WHAT AM I?   -------------------")
