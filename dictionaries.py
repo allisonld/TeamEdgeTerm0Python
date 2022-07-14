@@ -39,8 +39,12 @@ print(dictionary)
 #-->TODO: Declare a new dictionary and set at least 4 properties to it including: string, boolean, number, list
 
 ##################################  MY dictionary ########################### #/
-
-
+new_dict = {
+    "name": "Allison",
+    "adult": False, 
+    "age": 16,
+    "hobbies": ["tennis", "reading", "coding", "eating"]
+}
 
 
 
@@ -56,7 +60,9 @@ print("------------------- CHALLENGE 2 : MODIFY   -------------------")
 
 #-->TODO: Update the dictionary you just created  by adding new properties and values, including list elements, in this section.
 
-
+new_dict["favorite subject"] = "mathematics" 
+new_dict["favorite food"] = "noodles"
+new_dict["hobbies"].append("talking to people")
 #-->TODO: Print your dictionary again and observe changes
 
 
@@ -64,12 +70,16 @@ print("------------------- CHALLENGE 3 : MEHTODS   -------------------")
 
 
 #-->TODO: Make a method that will update your dictionary value. It should take in a dictionary and return it modified.
-
+def update_dict(dictionary): 
+    dictionary["modification"] = "This dictionary has been modified!"
+    return dictionary
 
 #-->TODO: Call the method.
 
-
+print(update_dict(new_dict))
 
 print("------------------- CHALLENGE 4 : LITERALLY   -------------------")
 
 #-->TODO: Put it all together using a string literal to tell the story of your dictionary!
+
+print("My name is" + str(new_dict["name"]) + "\n" + "Am I an adult?" + str(new_dict["adult"]))
